@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EBusinessEntity/1.0.0": {
+        "dependencies": {
+          "EBusinessCore": "1.0.0"
+        },
+        "runtime": {
+          "EBusinessEntity.dll": {}
+        }
+      },
+      "EBusinessCore/1.0.0": {
+        "runtime": {
+          "EBusinessCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EBusinessEntity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EBusinessCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
