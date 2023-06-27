@@ -22,3 +22,8 @@ C:\Users\user\Desktop\EBusiness\EBusinessViewModel\obj\Debug\net6.0\EBusinessVie
 C:\Users\user\Desktop\EBusiness\EBusinessViewModel\obj\Debug\net6.0\refint\EBusinessViewModel.dll
 C:\Users\user\Desktop\EBusiness\EBusinessViewModel\obj\Debug\net6.0\EBusinessViewModel.pdb
 C:\Users\user\Desktop\EBusiness\EBusinessViewModel\obj\Debug\net6.0\ref\EBusinessViewModel.dll
+C:\Users\user\Desktop\EBusiness\EBusinessViewModel\bin\Debug\net6.0\EBusinessCore.dll
+C:\Users\user\Desktop\EBusiness\EBusinessViewModel\bin\Debug\net6.0\EBusinessEntity.dll
+C:\Users\user\Desktop\EBusiness\EBusinessViewModel\bin\Debug\net6.0\EBusinessEntity.pdb
+C:\Users\user\Desktop\EBusiness\EBusinessViewModel\bin\Debug\net6.0\EBusinessCore.pdb
+C:\Users\user\Desktop\EBusiness\EBusinessViewModel\obj\Debug\net6.0\EBusinessViewModel.csproj.CopyComplete

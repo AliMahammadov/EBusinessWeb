@@ -36,3 +36,5 @@ C:\Users\user\Desktop\EBusiness\EBusinessService\bin\Debug\net6.0\EBusinessEntit
 C:\Users\user\Desktop\EBusiness\EBusinessService\bin\Debug\net6.0\EBusinessCore.pdb
 C:\Users\user\Desktop\EBusiness\EBusinessService\obj\Debug\net6.0\EBusinessService.csproj.CopyComplete
 C:\Users\user\Desktop\EBusiness\EBusinessService\obj\Debug\net6.0\ref\EBusinessService.dll
+C:\Users\user\Desktop\EBusiness\EBusinessService\bin\Debug\net6.0\EBusinessViewModel.dll
+C:\Users\user\Desktop\EBusiness\EBusinessService\bin\Debug\net6.0\EBusinessViewModel.pdb

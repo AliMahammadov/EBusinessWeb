@@ -51,7 +51,7 @@ namespace EBusinessData.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.Property<int>("PositionsId")
+                    b.Property<int?>("PositionId")
                         .HasColumnType("int");
 
                     b.Property<string>("Surname")
@@ -67,7 +67,7 @@ namespace EBusinessData.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PositionsId");
+                    b.HasIndex("PositionId");
 
                     b.ToTable("Employees");
                 });
@@ -301,9 +301,7 @@ namespace EBusinessData.Migrations
                 {
                     b.HasOne("EBusinessEntity.Entities.Position", "Positions")
                         .WithMany("Employees")
-                        .HasForeignKey("PositionsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PositionId");
 
                     b.Navigation("Positions");
                 });

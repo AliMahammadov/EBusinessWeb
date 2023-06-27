@@ -484,3 +484,5 @@ C:\Users\user\Desktop\EBusiness\EBusinessWeb\bin\Debug\net6.0\EBusinessCore.pdb
 C:\Users\user\Desktop\EBusiness\EBusinessWeb\bin\Debug\net6.0\EBusinessData.pdb
 C:\Users\user\Desktop\EBusiness\EBusinessWeb\bin\Debug\net6.0\EBusinessEntity.pdb
 C:\Users\user\Desktop\EBusiness\EBusinessWeb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\user\Desktop\EBusiness\EBusinessWeb\bin\Debug\net6.0\EBusinessViewModel.dll
+C:\Users\user\Desktop\EBusiness\EBusinessWeb\bin\Debug\net6.0\EBusinessViewModel.pdb
