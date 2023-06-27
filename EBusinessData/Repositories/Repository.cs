@@ -25,7 +25,7 @@ namespace EBusinessData.Repositories
 
         public async Task DeleteAsync(T entity)
         {
-            await Task.Run(() => Table.Update(entity));
+            await Task.Run(() => Table.Remove(entity));
         }
 
         public  async Task<ICollection<T>> GetAllAsync(Expression<Func<T, bool>> predicate = null, params Expression<Func<T, object>>[] includeProperties)

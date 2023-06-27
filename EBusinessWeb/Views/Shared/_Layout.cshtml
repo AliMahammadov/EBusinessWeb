@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,12 +44,15 @@
 
             <div class="logo">
                 <h1><a href="index.html"><span>e</span>Business</a></h1>
+
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
+                    <li><a asp-area="Manage" asp-action="index" asp-controller="Dashboard">Manage</a></li>
+
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
@@ -81,7 +85,7 @@
 
         </div>
     </header><!-- End Header -->
-            @RenderBody()
+    @RenderBody()
     <!-- ======= Footer ======= -->
     <footer>
         <div class="footer-area">

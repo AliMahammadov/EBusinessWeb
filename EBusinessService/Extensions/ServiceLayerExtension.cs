@@ -1,14 +1,15 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EBusinessService.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EBusinessService.Extensions
 {
-    public class ServiceLayerExtension
+    public static class ServiceLayerExtension
     {
-        //public static IServiceCollection LoadService
+        public static IServiceCollection LoadServiceLayerExtension(this  IServiceCollection services)
+        {
+            services.AddScoped<IPositionService, PositionService>();
+            return services;
+          
+        }
     }
 }

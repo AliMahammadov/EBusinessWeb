@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\EBusiness\\EBusinessCore\\EBusinessCore.csproj": {}
+    "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\EBusinessCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\EBusiness\\EBusinessCore\\EBusinessCore.csproj": {
+    "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\EBusinessCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
         "projectName": "EBusinessCore",
-        "projectPath": "C:\\Users\\user\\source\\repos\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\EBusiness\\EBusinessCore\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

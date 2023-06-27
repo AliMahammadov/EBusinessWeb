@@ -1,6 +1,5 @@
 ﻿using EBusinessData.UnitOfWorks;
 using EBusinessEntity.Entities;
-using System.Xml.Linq;
 
 namespace EBusinessService.Services
 {
@@ -47,16 +46,18 @@ namespace EBusinessService.Services
            return position;
         }
 
-        public async Task UpdatePositionPostAsync(int? id)
+        public async Task UpdatePositionPostAsync(int? id, Position position)
         {
             var positionOne = await unitOfWork.GetRepository<Position>().GetByIdAsync(id);
-            if (positionOne is not null)
+            if (positionOne!=null)
             {
-                positionOne.Name = positionOne.Name;
+                positionOne.Name = position.Name;
+                positionOne.UpdateAt = DateTime.Now;
 
                 await unitOfWork.GetRepository<Position>().UpdateAsync(positionOne);
                 await unitOfWork.SaveChangeAsync();
             }
+           
         }
     }
 }

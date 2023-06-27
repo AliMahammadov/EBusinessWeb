@@ -1,3 +1,5 @@
+using EBusinessData.Extesions;
+using EBusinessService.Extensions;
 namespace EBusinessWeb
 {
     public class Program
@@ -7,6 +9,8 @@ namespace EBusinessWeb
             var builder = WebApplication.CreateBuilder(args);
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.LoadDataLayerExtension(builder.Configuration);
+            builder.Services.LoadServiceLayerExtension();
 
             var app = builder.Build();
 
@@ -18,7 +22,7 @@ namespace EBusinessWeb
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllerRoute(
             name: "areas",
