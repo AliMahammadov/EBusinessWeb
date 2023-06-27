@@ -11195,6 +11195,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "EBusinessService >= 1.0.0",
+      "EBusinessViewModel >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.14"
     ]
@@ -11235,6 +11236,9 @@
           "projectReferences": {
             "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessService\\EBusinessService.csproj": {
               "projectPath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessService\\EBusinessService.csproj"
+            },
+            "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessViewModel\\EBusinessViewModel.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessViewModel\\EBusinessViewModel.csproj"
             }
           }
         }

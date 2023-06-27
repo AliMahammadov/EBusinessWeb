@@ -380,6 +380,9 @@
             "projectReferences": {
               "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessService\\EBusinessService.csproj": {
                 "projectPath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessService\\EBusinessService.csproj"
+              },
+              "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessViewModel\\EBusinessViewModel.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessViewModel\\EBusinessViewModel.csproj"
               }
             }
           }

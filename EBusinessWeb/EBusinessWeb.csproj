@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EBusinessService\EBusinessService.csproj" />
+    <ProjectReference Include="..\EBusinessViewModel\EBusinessViewModel.csproj" />
   </ItemGroup>
 
 </Project>

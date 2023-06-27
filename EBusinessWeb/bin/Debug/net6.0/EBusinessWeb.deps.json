@@ -9,6 +9,7 @@
       "EBusinessWeb/1.0.0": {
         "dependencies": {
           "EBusinessService": "1.0.0",
+          "EBusinessViewModel": "1.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.14"
         },

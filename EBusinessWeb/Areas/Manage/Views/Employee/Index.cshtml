@@ -38,14 +38,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-@*                                @foreach (var employees in Model ?? new List<Employee>())
+                               @foreach (var employees in Model ?? new List<Employee>())
                                 {
                                     <tr>
                                         <th scope="row">@employees.Id</th>
-                                        <th scope="row"><img style="width:70px;" src="~/assets/img/employee/@employees.ImageUrl" /></th>
+                                        <th scope="row"><img style="width:70px;" src="~/assets/img/employee/@employees.ImgUrl" /></th>
                                         <td>@employees.Name</td>
                                         <td>@employees.Surname</td>
-                                        <td>@employees.Position.Name</td>
+                                        <td>@employees.Positions.Name</td>
                                         <td>@employees.Facebook</td>
                                         <td>@employees.Instagram</td>
                                         <td>@employees.Twitter</td>
@@ -54,7 +54,7 @@
                                         <td><a asp-area="Manage" asp-controller="Employee" asp-action="Remove" asp-route-Id="@employees.Id" class="btn btn-danger" title="Remove"><i class="bi bi-trash"></i></a></td>
                                         <td><a asp-area="Manage" asp-controller="Employee" asp-action="Edit" asp-route-Id="@employees.Id" class="btn btn-warning" title="Edit"><i class="bx bxs-edit"></i></a></td>
                                     </tr>
-                                }*@
+                                }
                             </tbody>
                         </table>
                         <!-- End Tables without borders -->
