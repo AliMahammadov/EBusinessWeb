@@ -28,7 +28,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
         {
             if (!ModelState.IsValid) return View();
             await service.AddPosition(position);
-            return RedirectToAction("Index") ;
+            return RedirectToAction("Create") ;
         }
         public async Task<IActionResult> Delete(int id)
         {

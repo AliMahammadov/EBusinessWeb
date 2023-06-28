@@ -1,6 +1,7 @@
 ﻿using EBusinessData.DAL;
 using EBusinessData.UnitOfWorks;
 using EBusinessEntity.Entities;
+using EBusinessService.Services.Abstraction;
 using EBusinessViewModel.Entities.Employee;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -8,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EBusinessService.Services
 {
-    public class EmployeeService : IEmployeeService
+    public class EmployeeService:IEmployeeService
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly IHostingEnvironment environment;
@@ -24,7 +25,7 @@ namespace EBusinessService.Services
         {
             IFormFile file = createEmployeeVM.Image;
             string fileName = Guid.NewGuid().ToString() +file.FileName;
-            using var stream = new FileStream(Path.Combine(environment.WebRootPath, "assets","img","emplyee",fileName),FileMode.Create);
+            using var stream = new FileStream(Path.Combine(environment.WebRootPath, "assets","img","employee",fileName),FileMode.Create);
             await file.CopyToAsync(stream);
             await stream.FlushAsync();
             Employee employee = new Employee
@@ -41,10 +42,12 @@ namespace EBusinessService.Services
             await unitOfWork.SaveChangeAsync();
         }
 
-        public async Task<ICollection<Employee>> GetAllEmployee()
+        public async Task<ICollection<Employee>> GetAllEmployeeAsync()
         {
             return await dbContext.Employees.Include(e =>e.Positions).ToListAsync(); 
         }
+
+     
 
         public async Task RemoveEmployeeAsync(int id)
         {

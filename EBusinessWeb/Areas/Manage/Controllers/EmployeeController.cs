@@ -1,6 +1,7 @@
 ﻿using EBusinessData.DAL;
 using EBusinessEntity.Entities;
 using EBusinessService.Services;
+using EBusinessService.Services.Abstraction;
 using EBusinessViewModel.Entities.Employee;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace EBusinessWeb.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    public class EmployeeController : Controller
+    public class EmployeeController : Controller //isci
     {
         private readonly IEmployeeService employeeService;
         private readonly AppDbContext context;
@@ -21,7 +22,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
 
         public async Task<IActionResult>Index()
         {
-            ICollection<Employee> employees = await employeeService.GetAllEmployee();
+            ICollection<Employee> employees = await employeeService.GetAllEmployeeAsync();
 
             return View(employees);
         }
@@ -39,7 +40,8 @@ namespace EBusinessWeb.Areas.Manage.Controllers
                 return RedirectToAction(nameof(Create));
             }
             await employeeService.AddEmplooyeAsync(employeeVM);
-            return RedirectToAction(nameof(Create));
+            return RedirectToAction(nameof(Index));
+          
         }
         public async Task<IActionResult> Delete(int id)
         {
@@ -51,7 +53,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
         }
         public async Task<IActionResult> Update(int id)
         {
-            if(ModelState.IsValid)
+            if(ModelState.IsValid && id!=null)
             {
                 ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
             }
@@ -60,7 +62,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int id, UpdateEmployeeVM employeeVM)
         {
-            if (!ModelState.IsValid && employeeVM != null)
+            if (ModelState.IsValid && employeeVM != null)
             {
                 ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
                 return View();
