@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gg2pQPqk9D9rAhbDzPuQ7Pc42e1N+JH/aymSa13X6+o=",
+  "Hash": "bFT5cHiRjlCUF4VCmBhqT7pgc+qv0MLyRdQRzvy8T6s=",
   "Source": "EBusinessWeb",
   "BasePath": "_content/EBusinessWeb",
   "Mode": "Default",
@@ -289,6 +289,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\b02.jpg"
     },
     {
+      "Identity": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessWeb\\wwwroot\\assets\\img\\employee\\7c0aeb4f-4abd-4657-bece-e3a9de0046bc+994 55 628 08 99 20230215_001326.jpg",
+      "SourceId": "EBusinessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessWeb\\wwwroot\\",
+      "BasePath": "_content/EBusinessWeb",
+      "RelativePath": "assets/img/employee/7c0aeb4f-4abd-4657-bece-e3a9de0046bc+994 55 628 08 99 20230215_001326.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\employee\\7c0aeb4f-4abd-4657-bece-e3a9de0046bc+994 55 628 08 99 20230215_001326.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessWeb\\wwwroot\\assets\\img\\employee\\9e808155-d10d-4a36-990f-92335413cb53Image 1.jpg",
+      "SourceId": "EBusinessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessWeb\\wwwroot\\",
+      "BasePath": "_content/EBusinessWeb",
+      "RelativePath": "assets/img/employee/9e808155-d10d-4a36-990f-92335413cb53Image 1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\employee\\9e808155-d10d-4a36-990f-92335413cb53Image 1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessWeb\\wwwroot\\assets\\img\\employee\\abe114d9-93fd-41f8-a485-5114fdb36aab333646634_112185405052235_1582182875112464979_n.jpg",
       "SourceId": "EBusinessWeb",
       "SourceType": "Discovered",
@@ -304,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\employee\\abe114d9-93fd-41f8-a485-5114fdb36aab333646634_112185405052235_1582182875112464979_n.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessWeb\\wwwroot\\assets\\img\\employee\\d7b7737f-569a-4239-b487-39c560882477333646634_112185405052235_1582182875112464979_n.jpg",
+      "SourceId": "EBusinessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessWeb\\wwwroot\\",
+      "BasePath": "_content/EBusinessWeb",
+      "RelativePath": "assets/img/employee/d7b7737f-569a-4239-b487-39c560882477333646634_112185405052235_1582182875112464979_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\employee\\d7b7737f-569a-4239-b487-39c560882477333646634_112185405052235_1582182875112464979_n.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessWeb\\wwwroot\\assets\\img\\employee\\f154e893-ef5e-49a2-ac92-249b8b955a12352186328_1356731345057871_6683530770365367582_n.jpg",

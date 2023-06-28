@@ -1,6 +1,5 @@
 ﻿using EBusinessData.DAL;
 using EBusinessEntity.Entities;
-using EBusinessService.Services;
 using EBusinessService.Services.Abstraction;
 using EBusinessViewModel.Entities.Employee;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +19,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
             this.context = context;
         }
 
-        public async Task<IActionResult>Index()
+        public async Task<IActionResult> Index()
         {
             ICollection<Employee> employees = await employeeService.GetAllEmployeeAsync();
 
@@ -34,42 +33,41 @@ namespace EBusinessWeb.Areas.Manage.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateEmployeeVM employeeVM)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id),nameof(Position.Name));
+                ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
                 return RedirectToAction(nameof(Create));
             }
             await employeeService.AddEmplooyeAsync(employeeVM);
             return RedirectToAction(nameof(Index));
-          
+
         }
         public async Task<IActionResult> Delete(int id)
         {
-            if(id!=null )
+            if (id != null)
             {
-               await employeeService.RemoveEmployeeAsync(id);
+                await employeeService.RemoveEmployeeAsync(id);
             }
             return RedirectToAction($"{nameof(Index)}");
         }
         public async Task<IActionResult> Update(int id)
         {
-            if(ModelState.IsValid && id!=null)
-            {
-                ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
-            }
-            return RedirectToAction($"{nameof(Index)}");
+            if (!ModelState.IsValid && id != null) return BadRequest();
+
+            ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
+
+            return View();
         }
         [HttpPost]
         public async Task<IActionResult> Update(int id, UpdateEmployeeVM employeeVM)
         {
-            if (ModelState.IsValid && employeeVM != null)
-            {
-                ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
-                return View();
-            }
+            if (!ModelState.IsValid && employeeVM != null) return NotFound();
+
+            ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
+
 
             await employeeService.UpdateEmployeeAsync(id, employeeVM);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction($"{nameof(Index)}");
         }
 
     }
