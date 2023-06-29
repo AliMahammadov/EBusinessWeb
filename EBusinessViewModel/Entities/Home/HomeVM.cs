@@ -1,11 +1,12 @@
 ﻿using EBusinessEntity.Entities;
 
-namespace EBusinessViewModel.Entities.Home
-{
+
     public class HomeVM
     {
-        public ICollection<Contact> contacts { get; set; }
-        public ICollection<Blog> blogs { get; set; }
+        public ICollection<Contact> Contacts { get; set; }
+        public ICollection<Employee>? Employees { get; set; }
+        public ICollection<Position>? Positions { get; set; }
+
 
     }
-}
+
