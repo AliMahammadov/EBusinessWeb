@@ -52,7 +52,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
         }
         public async Task<IActionResult> Update(int id)
         {
-            if (!ModelState.IsValid && id != null) return BadRequest();
+            if (!ModelState.IsValid) return View();
 
             ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
 
@@ -61,7 +61,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int id, UpdateEmployeeVM employeeVM)
         {
-            if (!ModelState.IsValid && employeeVM != null) return NotFound();
+            if (!ModelState.IsValid ) return View();
 
             ViewBag.Positions = new SelectList(context.Positions, nameof(Position.Id), nameof(Position.Name));
 

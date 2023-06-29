@@ -10,6 +10,9 @@ namespace EBusinessService.Extensions
         {
             services.AddScoped<IPositionService, PositionService>();
             services.AddScoped<IEmployeeService,EmployeeService>();
+            services.AddScoped<IBlogService,BlogService>();
+            services.AddScoped<IPostService,PostService>();
+
             return services;
           
         }

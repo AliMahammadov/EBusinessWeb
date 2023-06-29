@@ -1,13 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+﻿using EBusinessService.Services.Abstraction;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EBusinessWeb.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IEmployeeService employeeService;
+
+        public HomeController(IEmployeeService employeeService)
         {
-            return View();
+            this.employeeService = employeeService;
+        }
+        public async Task<IActionResult> Index()
+        {
+            var employees = await employeeService.GetAllEmployeeAsync();
+            return View(employees);
         }
     }
 }

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EBusinessData.Migrations
 {
-    public partial class CreateEmployeeAndPosition : Migration
+    public partial class Get : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

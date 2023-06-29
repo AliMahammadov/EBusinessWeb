@@ -9,5 +9,7 @@ namespace EBusinessData.DAL
         public AppDbContext(DbContextOptions<AppDbContext> opt) :base(opt) { }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
     }
 }
