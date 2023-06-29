@@ -39,7 +39,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
                 return RedirectToAction(nameof(Create));
             }
             await employeeService.AddEmplooyeAsync(employeeVM);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Create));
 
         }
         public async Task<IActionResult> Delete(int id)

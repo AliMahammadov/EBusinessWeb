@@ -1,0 +1,63 @@
+﻿﻿@using EBusinessEntity.Entities;
+
+@model ICollection<Blog>
+<main id="main" class="main">
+
+    <div class="pagetitle">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="Manage" asp-controller="Dashboard" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item">Positions</li>
+                <li class="breadcrumb-item active">See</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12 container">
+
+                <div class="card container">
+                    <div class="card-body">
+                        <h5 class="card-title">Positions</h5>
+                        <!-- Active Table -->
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th typeof="Text" scope="col">Blog</th>
+                                  
+                                    <th scope="col">Created Date</th>
+                                    <th scope="col">Updated Date</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model ?? new List<Blog>())
+                                {
+                                    <tr>
+                                        <th scope="row">@item.Id</th>
+
+                                        <td>@item.Name</td>
+                                        <td>@item.CreateAt.Day/@item.CreateAt.Month/@item.CreateAt.Year</td>
+                                        <td>@item.UpdateAt</td>
+                                        <td><a asp-area="Manage" asp-controller="Blog" asp-action="Delete" asp-route-Id="@item.Id" class="btn btn-danger" title="Delete"><i class="bi bi-trash"></i></a></td>
+                                        <td><a asp-area="Manage" asp-controller="Blog" asp-action="Update" asp-route-Id="@item.Id" class="btn btn-warning" title="Update"><i class="bx bxs-edit"></i></a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <!-- End Tables without borders -->
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+</main><!-- End #main -->
+<!-- ======= Footer ======= -->

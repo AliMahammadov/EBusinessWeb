@@ -38,7 +38,7 @@ namespace EBusinessWeb.Areas.Manage.Controllers
                 return View();
             }
             await service.AddPostAsync(postVM);
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Create));
         }
         public async Task<IActionResult> Delete(int id)
         {
