@@ -22,6 +22,8 @@ namespace EBusinessWeb.Controllers
                 Employees = context.Employees.ToList(),
                 Positions = context.Positions.ToList(),
                 Contacts = context.Contacts.ToList(),
+                Blogs = context.Blogs.ToList(),
+                Posts = context.Posts.ToList(),
             };
             return View(homeVM);
         }
