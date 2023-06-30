@@ -60,6 +60,7 @@
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
                     <li><a asp-action="Index" asp-controller="Blog" asp-area="EBusinessWeb" >Blog</a></li>
                     <li><a asp-action="Index" asp-controller="Blogdetail" asp-area="EBusinessWeb" >Blog Detail</a></li>
+               
                     <li class="dropdown">
                         <a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -80,6 +81,10 @@
                         </ul>
                     </li>
                     <li><a asp-action="SendEmail" asp-controller="Email" asp-area="EBusinessWeb">Contact</a></li>
+                   
+            
+                    <a class="bi bi-shield-lock-fill"  asp-action="Login" asp-controller="Account" asp-area="EBusinessWeb ">Login</a>
+                    
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

@@ -10,19 +10,28 @@ namespace EBusinessWeb.Controllers
     {
         private readonly IPostService service;
         private readonly AppDbContext context;
+        private readonly IBlogService blogService;
 
 
-        public BlogController(IPostService service, AppDbContext context)
+        public BlogController(IPostService service, AppDbContext context, IBlogService blogService)
         {
             this.service = service;
             this.context = context;
+            this.blogService = blogService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var post = await service.GetAllPostAsync();
-            ViewBag.Blogs= await context.Blogs.ToListAsync();
-            return View(post);
+            HomeVM homeVM = new HomeVM()
+            {
+                Posts = await service.GetAllPostAsync(),
+                Blogs = await blogService.GetAllBlogAsync(),
+
+
+            };
+            //var post = await service.GetAllPostAsync();
+            //ViewBag.Blogs= await context.Blogs.ToListAsync();
+            return View(homeVM);
         }
     }
 }
