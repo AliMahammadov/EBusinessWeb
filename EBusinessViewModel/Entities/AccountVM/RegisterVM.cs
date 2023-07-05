@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EBusinessViewModel.Entities.AccountVM
 {
-    internal class RegisterVM
+    public class RegisterVM
     {
         [Required,MaxLength(15)]
         public string Name { get; set; }

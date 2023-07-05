@@ -1,5 +1,9 @@
+using EBusinessData.DAL;
 using EBusinessData.Extesions;
+using EBusinessEntity.Entities.User;
 using EBusinessService.Extensions;
+using Microsoft.AspNetCore.Identity;
+
 namespace EBusinessWeb
 {
     public class Program
@@ -11,7 +15,17 @@ namespace EBusinessWeb
             builder.Services.AddControllersWithViews();
             builder.Services.LoadDataLayerExtension(builder.Configuration);
             builder.Services.LoadServiceLayerExtension();
+            builder.Services.AddIdentity<AppUser, IdentityRole>(option =>
+            {
+                option.Password.RequireDigit = true;
+                option.Password.RequireNonAlphanumeric = false;
+                option.Password.RequiredLength = 5;
+                option.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstu vwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.";
+                option.Lockout.AllowedForNewUsers = true;
 
+
+            }
+            ).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -23,6 +37,7 @@ namespace EBusinessWeb
 
             app.UseRouting();
             app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllerRoute(
             name: "areas",

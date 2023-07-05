@@ -213,7 +213,7 @@
 
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                         <img src="~/manage/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-                        <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                        <span class="d-none d-md-block dropdown-toggle ps-2">@User.Identity.Name</span>
                     </a><!-- End Profile Iamge Icon -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
@@ -257,9 +257,10 @@
 
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="#">
-                                <i class="bi bi-box-arrow-right"></i>
-                                <span>Sign Out</span>
+
+                                <a class="bi bi-box-arrow-right" class="dropdown-item d-flex align-items-center" asp-area="EBusinessWeb" asp-controller="Account" asp-action="Logout">Logout</a>
                             </a>
+       
                         </li>
 
                     </ul><!-- End Profile Dropdown Items -->

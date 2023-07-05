@@ -2,12 +2,15 @@
 using EBusinessEntity.Entities;
 using EBusinessService.Services;
 using EBusinessViewModel.Entities.Post;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data;
 
 namespace EBusinessWeb.Areas.Manage.Controllers
 {
-    [Area("Manage")]
+    [Area("Manage"), Authorize(Roles = "Super Admin ,Admin")]
     public class PostController : Controller
     {
         private readonly IPostService service;
@@ -62,5 +65,6 @@ namespace EBusinessWeb.Areas.Manage.Controllers
             await service.EditPostPostAsync(id, postVM);
             return RedirectToAction("Index");   
         }
+       
     }
 }

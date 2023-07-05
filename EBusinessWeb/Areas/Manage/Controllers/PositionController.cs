@@ -1,10 +1,12 @@
 ﻿using EBusinessEntity.Entities;
 using EBusinessService.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace EBusinessWeb.Areas.Manage.Controllers
 {
-    [Area("Manage")]
+    [Area("Manage"), Authorize(Roles = "Super Admin ,Admin")]
     public class PositionController : Controller
     {
         private readonly IPositionService service;

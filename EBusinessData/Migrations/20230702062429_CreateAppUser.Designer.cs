@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EBusinessData.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230630190905_CreateAppUser")]
+    [Migration("20230702062429_CreateAppUser")]
     partial class CreateAppUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -415,13 +415,13 @@ namespace EBusinessData.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
-                    b.Property<bool>("IsParsistance")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
+
+                    b.Property<bool>("RememberMe")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Surname")
                         .IsRequired()

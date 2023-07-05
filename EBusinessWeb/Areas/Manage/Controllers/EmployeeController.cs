@@ -2,12 +2,14 @@
 using EBusinessEntity.Entities;
 using EBusinessService.Services.Abstraction;
 using EBusinessViewModel.Entities.Employee;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data;
 
 namespace EBusinessWeb.Areas.Manage.Controllers
 {
-    [Area("Manage")]
+    [Area("Manage"), Authorize(Roles = "Super Admin ,Admin")]
     public class EmployeeController : Controller //isci
     {
         private readonly IEmployeeService employeeService;

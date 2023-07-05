@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -51,7 +52,16 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a asp-area="Manage" asp-action="index" asp-controller="Dashboard">Manage</a></li>
+@*
+                    @if (User.IsInRole("Super Admin"))
+                    {
+                       
+                    }
+                    else
+                    {
+                        <li><a asp-area="Manage" asp-action="index" asp-controller="Dashboard">dassax</a></li>
+                    }*@
+
 
                     <li><a asp-action="Index" asp-controller="Home" asp-area="EBusinessWeb">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
@@ -81,9 +91,23 @@
                         </ul>
                     </li>
                     <li><a asp-action="SendEmail" asp-controller="Email" asp-area="EBusinessWeb">Contact</a></li>
+
+                    @if (User.IsInRole("Super Admin"))
+                    {
+                        <li><a asp-area="Manage" asp-action="index" asp-controller="Dashboard"> @User.Identity.Name</a></li>
+                       
+                    }
+                    else if(User.Identity.IsAuthenticated)
+                    {
+
+                        <a lass=" bi bi-house" asp-action="Index" asp-controller="User" asp-area="User"> @User.Identity.Name</a>
+                    }
+                    else
+                    {
+                    <a class="bi bi-shield-lock-fill" asp-action="Login" asp-controller="Account" asp-area="EBusinessWeb ">Login</a>
+                    }
+
                    
-            
-                    <a class="bi bi-shield-lock-fill"  asp-action="Login" asp-controller="Account" asp-area="EBusinessWeb ">Login</a>
                     
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>

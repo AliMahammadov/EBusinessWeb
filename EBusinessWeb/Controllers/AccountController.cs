@@ -1,26 +1,98 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EBusinessEntity.Entities.User;
+using EBusinessViewModel.Entities.AccountVM;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using NuGet.Common;
 
-namespace EBusinessWeb.Controllers
+namespace EBusinessWeb.Controllers;
+
+public class AccountController : Controller
 {
-    public class AccountController : Controller
+    SignInManager<AppUser> signInManager;
+    UserManager<AppUser> userManager;
+    RoleManager<IdentityRole> roleManager;
+
+    public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager)
     {
-        public  async Task<IActionResult> Login()
+        this.signInManager = signInManager;
+        this.userManager = userManager;
+        this.roleManager = roleManager;
+    }
+
+    public  async Task<IActionResult> Login()
+    {
+        return View();
+    }
+    [HttpPost]
+    public async Task<IActionResult> Login(LoginVM loginVM)
+    {
+     if ( !ModelState.IsValid ) return View();
+     AppUser user = await userManager.FindByNameAsync(loginVM.Username);
+        if(user==null)
         {
+            ModelState.AddModelError("Username", "Login or Password is wrong");
             return View();
         }
-        //[HttpPost]
-        //public   async Task<IActionResult>Login()
-        //{
-        //    return View();
-        //}
-        public async Task<IActionResult> Register()
+        var reult = await signInManager.PasswordSignInAsync(user, loginVM.Password,loginVM.RememberMe,true);
+        if(!reult.Succeeded)
         {
+            ModelState.AddModelError("Password", "Login or Password is wrong");
             return View();
         }
-        //[HttpPost]
-        //public async Task<IActionResult> Register()
-        //{
-        //    return View();
-        //}
+        return RedirectToAction("Index", "Home");
+    }
+    public async Task<IActionResult> Register()
+    {
+        return View();
+    }
+    [HttpPost]
+    public async Task<IActionResult> Register(RegisterVM registerVM)
+    {
+        if (!ModelState.IsValid) return View();
+        AppUser user = await userManager.FindByNameAsync(registerVM.UserName);
+        if (user != null)
+        {
+            ModelState.AddModelError("Username", "This User already exists");
+            return View();
+        }
+        user = new AppUser
+            {
+                Name = registerVM.UserName,
+                Email= registerVM.Email,
+                UserName= registerVM.UserName
+            };
+            IdentityResult result = await userManager.CreateAsync(user, registerVM.Password);
+            if(!result.Succeeded)
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError("", item.Description);
+                }
+                return View();
+            }
+        await userManager.AddToRoleAsync(user, "Admin");
+        await signInManager.SignInAsync(user, true);
+        return RedirectToAction("Index","Home");
+
+        
+    }
+    public async Task<IActionResult> Logout()
+    {
+        await signInManager.SignOutAsync();
+        return RedirectToAction("Index","Home");
+
+    }
+    public async Task<IActionResult> AddRoles()
+    {
+        await roleManager.CreateAsync(new IdentityRole { Name = "Super Admin" });
+        await roleManager.CreateAsync(new IdentityRole { Name = "Admin" });
+        return View();
+
+    }
+    public async Task<IActionResult> Test()
+    {
+        var user = await userManager.FindByNameAsync("Ali");
+        await userManager.AddToRoleAsync(user, "Super Admin");
+            return View();
     }
 }

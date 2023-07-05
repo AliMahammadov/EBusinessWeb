@@ -15,17 +15,17 @@ namespace EBusinessData.Migrations
                 nullable: false,
                 defaultValue: "");
 
-            migrationBuilder.AddColumn<bool>(
-                name: "IsParsistance",
-                table: "AspNetUsers",
-                type: "bit",
-                nullable: true);
-
             migrationBuilder.AddColumn<string>(
                 name: "Name",
                 table: "AspNetUsers",
                 type: "nvarchar(15)",
                 maxLength: 15,
+                nullable: true);
+
+            migrationBuilder.AddColumn<bool>(
+                name: "RememberMe",
+                table: "AspNetUsers",
+                type: "bit",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
@@ -43,11 +43,11 @@ namespace EBusinessData.Migrations
                 table: "AspNetUsers");
 
             migrationBuilder.DropColumn(
-                name: "IsParsistance",
+                name: "Name",
                 table: "AspNetUsers");
 
             migrationBuilder.DropColumn(
-                name: "Name",
+                name: "RememberMe",
                 table: "AspNetUsers");
 
             migrationBuilder.DropColumn(
