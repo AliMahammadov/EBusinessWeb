@@ -91,8 +91,8 @@ public class AccountController : Controller
     }
     public async Task<IActionResult> Test()
     {
-        var user = await userManager.FindByNameAsync("Ali");
-        await userManager.AddToRoleAsync(user, "Super Admin");
+        var user = await userManager.FindByNameAsync("Ruslan");
+        await userManager.AddToRoleAsync(user, "Admin");
             return View();
     }
 }
