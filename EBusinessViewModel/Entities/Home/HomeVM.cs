@@ -8,6 +8,7 @@
         public IEnumerable<Position>? Positions { get; set; }
         public IEnumerable<Blog>? Blogs { get; set; }
         public IEnumerable<Post>? Posts { get; set; }
+        public IEnumerable<About>? Abouts { get; set;}
 
 
 

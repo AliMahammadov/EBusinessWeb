@@ -9,125 +9,129 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EBusinessWeb
 build_property.RootNamespace = EBusinessWeb
-build_property.ProjectDir = C:\Users\user\Desktop\EBusiness\EBusinessWeb\
+build_property.ProjectDir = C:\Users\user\Desktop\BackEnd\EBusiness\EBusinessWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\EBusiness\EBusinessWeb
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\BackEnd\EBusiness\EBusinessWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Blog/Create.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFib3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Blog/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb2dcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Blog/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb2dcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Blog/Update.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Blog/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb2dcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Contact/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENvbnRhY3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Dashboard/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Employee/Create.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEVtcGxveWVlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Employee/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEVtcGxveWVlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Employee/Update.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Employee/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEVtcGxveWVlXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Position/Create.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Position/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFBvc2l0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Position/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Position/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFBvc2l0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Position/Update.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Position/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFBvc2l0aW9uXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Post/Create.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Post/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFBvc3RcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Post/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Post/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFBvc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/Shared/_Layout.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/_ViewImports.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/Manage/Views/_ViewStart.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/Manage/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/User/Views/Shared/_Layout.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/User/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/User/Views/User/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/User/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/User/Views/_ViewImports.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/User/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Areas/User/Views/_ViewStart.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Areas/User/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/Account/Login.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/Account/Register.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/BlogDetail/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/BlogDetail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0RldGFpbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/Blog/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/Email/SendEmail.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/Email/SendEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxcU2VuZEVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/Home/Index.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/_ViewImports.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/_ViewStart.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/EBusiness/EBusinessWeb/Views/Shared/_Layout.cshtml]
+[C:/Users/user/Desktop/BackEnd/EBusiness/EBusinessWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s6kxgjyia5

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q869NTEgeNv3gpt+iOL48I+jzJr5yoSW0+mex8aZOM8V19BfrYFLALVIPv2Nl6EbzjiNiCGylGND9c9c0jSOlw==",
+  "dgSpecHash": "SwKWWhnDLQsHL3FpkB7eDHaAIFP/mViRjyq82PbzLufjsh9punzM+BcvM6pg0XC+pCp6muCjv2lbCfKYBI/NNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\BackEnd\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

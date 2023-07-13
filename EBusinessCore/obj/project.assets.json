@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\BackEnd\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
       "projectName": "EBusinessCore",
-      "projectPath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\BackEnd\\EBusiness\\EBusinessCore\\EBusinessCore.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessCore\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\BackEnd\\EBusiness\\EBusinessCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

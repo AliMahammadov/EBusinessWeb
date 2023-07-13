@@ -1,5 +1,7 @@
-﻿using EBusinessData.UnitOfWorks;
+﻿using EBusinessData.DAL;
+using EBusinessData.UnitOfWorks;
 using EBusinessEntity.Entities;
+using Microsoft.AspNetCore.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;

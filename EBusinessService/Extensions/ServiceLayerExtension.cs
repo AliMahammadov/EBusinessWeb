@@ -13,6 +13,7 @@ namespace EBusinessService.Extensions
             services.AddScoped<IBlogService,BlogService>();
             services.AddScoped<IPostService,PostService>();
             services.AddScoped<IContactService,ContactService>();
+            //services.AddScoped<IAboutService, AboutService>();
 
             return services;
           

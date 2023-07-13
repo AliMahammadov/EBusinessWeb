@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kfz3ejLLBpj/dIyeGLOkxIDdovVkQ5b3AfHzt53RDXAXNWtN/KxgNjMvypKrdocoIb1ErNV4Gy595Ospl43mxw==",
+  "dgSpecHash": "zNpnI9KzQwBV0vSvvqn2u0beXzJJtvSwgpADDKUMzUOF5tBH6TBbS22PprqazUSVocuj+ZycAA0sr7mjtWZJBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\EBusiness\\EBusinessViewModel\\EBusinessViewModel.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\BackEnd\\EBusiness\\EBusinessViewModel\\EBusinessViewModel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
