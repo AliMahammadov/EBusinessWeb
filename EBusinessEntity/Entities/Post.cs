@@ -2,7 +2,7 @@
 
 namespace EBusinessEntity.Entities
 {
-    public  class Post:EntityBase
+    public class Post : EntityBase
     {
         public string Title { get; set; }
         public string Description { get; set; }
@@ -10,5 +10,6 @@ namespace EBusinessEntity.Entities
 
         public int BlogId { get; set; }
         public Blog? Blog { get; set; }
+        public ICollection<Comment>? Comments { get; set; }
     }
 }
